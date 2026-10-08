@@ -267,6 +267,7 @@ function ProductList({ onHomeClick }) {
         }));
     };
 
+    const calculateTotalQuantity = () => { return CartItem ? CartItems.reduce((total, item) => total + item.quantity, 0) : 0; };
 
     return (
         <div>
